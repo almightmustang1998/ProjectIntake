@@ -1,0 +1,90 @@
+﻿ @model ProjectIntake.Models.AccountModel
+
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Corben', Georgia, Times, serif;
+        }
+
+        p, div {
+            font-family: 'Nobile', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border-style: solid;
+            color: white;
+        }
+
+        .navbar-custom {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="~/Images/bell_tower.jpg" class="img-fluid" alt="Temple BellTower">
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body p-5">
+                        <h2 class="text-uppercase text-center">Login to your account</h2>
+                        <h6 class="text-center mb-5">Enter your email to login</h6>
+
+
+                        <form asp-controller="" asp-action="" method="POST">
+                            
+                            <div class="form-group">
+                                <input asp-for="Email" type="email" class="form-control form-control-lg" placeholder="Email" />
+                            </div>
+
+                            <div class="form-group">
+                                <input asp-for="Password" type="text" class="form-control form-control-lg" placeholder="Your Organization Name">
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <div class="form-group">
+                                    <button id="btnLogin" type="submit" class="btn btn-dark btn-block btn-lg">Login</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <p class="text-center text-muted mt-5 mb-0">Have an account already? <a asp-controller="" asp-action="" class="fw-bold text-body"><u>Login here</u></a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start" style="margin-top: 350px;">
+        <div class="text-center p-3 navbar-custom">
+            © 2024 Project Intake: All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>
+

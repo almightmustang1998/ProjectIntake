@@ -8,5 +8,10 @@ namespace ProjectIntake.Controllers
         {
             return View();
         }
+
+        public IActionResult AccountLogin()
+        {
+            return View();
+        }
     }
 }
