@@ -1,0 +1,61 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <link href="~/css/ProjectIntake.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a asp-controller="ClientDashboard" asp-action="ClientDashboard">Project Intake</a></li>
+            <li><a asp-controller="ClientDashboard" asp-action="ClientDashboard">Dashboard</a></li>
+            <li><a asp-controller="ClientViewProjects" asp-action="ClientViewProjects">View Submitted Projects</a></li>
+            <li><a asp-controller="EditProfile" asp-action="EditProfile">Edit Profile</a></li>
+            <li><a asp-controller="Account" asp-action="AccountLogin">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="project-review">
+        <h2>Projects under review</h2>
+        <table id="projects-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Submitted Date:</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Class Registration App</td>
+                    <td>An updated way to register for disaster classes</td>
+                    <td>2/20/2024</td>
+                    <td><a class="button-link" asp-controller="ClientViewProjectDetails" asp-action="ClientViewProjectDetails">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Food Truck App</td>
+                    <td>Locating food trucks on campus through GPS</td>
+                    <td>2/25/2024</td>
+                    <td><a class="button-link" asp-controller="ClientViewProjectDetails" asp-action="ClientViewProjectDetails">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Bathroom Finder App</td>
+                    <td>Finds the nearest bathroom on campus</td>
+                    <td>3/3/2024</td>
+                    <td><a class="button-link" asp-controller="ClientViewProjectDetails" asp-action="ClientViewProjectDetails">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Food Truck App</td>
+                    <td>Locating food trucks on campus through GPS</td>
+                    <td>3/10/2024</td>
+                    <td><a class="button-link" asp-controller="ClientViewProjectDetails" asp-action="ClientViewProjectDetails">View Project</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <td><a class="button-link" asp-controller="CreateProject" asp-action="CreateProject">Create Project</a></td>
+    </div>
+    </body>
+</html>
+

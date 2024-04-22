@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null; // No layout to match the wireframe
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/ProjectIntake.css">
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <ul>
+                <li><a asp-controller="ClientDashboard" asp-action="ClientDashboard">Project Intake</a></li>
+                <li><a asp-controller="ClientDashboard" asp-action="ClientDashboard">Dashboard</a></li>
+                <li><a asp-controller="ClientViewProjects" asp-action="ClientViewProjects">View Submitted Projects</a></li>
+                <li><a asp-controller="EditProfile" asp-action="EditProfile">Edit Profile</a></li>
+                <li><a asp-controller="Account" asp-action="AccountLogin">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="content">
+        <h2>Class Registration</h2>
+        <div class="description">
+            <strong>Description:</strong>
+            <p>Crafted with precision to optimize the academic journey, the Class Registration System offers students and administrators a seamless experience through its intuitive interface, dynamic course catalog, and efficient registration management tools, ensuring hassle-free enrollment and streamlined administrative processes.</p>
+        </div>
+        <table>
+            <tr>
+                <th>Profile ID</th>
+                <th>Project Status</th>
+                <th>Submitted Date:</th>
+                <th>Review Date</th>
+            </tr>
+            <tr>
+                <td>Neel1234</td>
+                <td>
+                    <select>
+                        <option value="Pending">Pending</option>
+                    </select>
+                </td>
+                <td>2/10/2024</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -4,24 +4,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Intake Dashboard</title>
-    <link rel="stylesheet" href="~/css/ProjectIntake.css"> <!-- Ensure the correct path to your CSS file -->
+    <link rel="stylesheet" href="~/css/ProjectIntake.css">
 </head>
 <body>
     <div id="header">
         <nav>
             <ul>
-                <li><a asp-controller="Dashboard" asp-action="Dashboard">Project Intake</a></li>
-                <li><a asp-controller="Dashboard" asp-action="Dashboard">Dashboard</a></li>
-                <li><a asp-controller="ManageProjects" asp-action="ManageProjects">Manage Projects</a></li>
-                <li><a asp-controller="ManageProfiles" asp-action="ManageProfiles">Manage Profiles</a></li>
+                <li><a asp-controller="ClientDashboard" asp-action="ClientDashboard">Project Intake</a></li>
+                <li><a asp-controller="ClientDashboard" asp-action="ClientDashboard">Dashboard</a></li>
+                <li><a asp-controller="ClientViewProjects" asp-action="ClientViewProjects">View Submitted Projects</a></li>
+                <li><a asp-controller="EditProfile" asp-action="EditProfile">Edit Profile</a></li>
                 <li><a asp-controller="Account" asp-action="AccountLogin">Logout</a></li>
             </ul>
         </nav>
     </div>
-
     <div id="content">
         <div id="filter">
             <table>
@@ -59,16 +55,15 @@
                         <td>Faster way to register for classes</td>
                         <td>Pending Review</td>
                         <td>None</td>
-                        <td><button class="button-link">View Project</button></td>
+                        <td><a class="button-link" asp-controller="ClientViewProjectDetails" asp-action="ClientViewProjectDetails">View Project</a></td>
                     </tr>
                     <tr>
                         <td>Food Truck App</td>
                         <td>Ordering from food trucks on campus through grubhub</td>
                         <td>Denied</td>
                         <td>We don't like it. -Someone<br>2 Other comments</td>
-                        <td><button class="button-link">View Project</button></td>
+                        <td><a class="button-link" asp-controller="ClientViewProjectDetails" asp-action="ClientViewProjectDetails">View Project</a></td>
                     </tr>
-                    <!-- Add more rows as needed -->
                 </tbody>
             </table>
         </div>

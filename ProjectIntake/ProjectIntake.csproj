@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="Views\Client\Profile\" />
     <Folder Include="Views\Reviewer\Main\" />
     <Folder Include="Views\Reviewer\Profile\" />
     <Folder Include="Views\Reviewer\Project\" />
