@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null; // No layout to match the wireframe
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/ProjectIntake.css">
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <ul>
+                <li><a asp-controller="Dashboard" asp-action="Dashboard">Project Intake</a></li>
+                <li><a asp-controller="Dashboard" asp-action="Dashboard">Dashboard</a></li>
+                <li><a asp-controller="ManageProjects" asp-action="ManageProjects">Manage Projects</a></li>
+                <li><a asp-controller="ManageProfiles" asp-action="ManageProfiles">Manage Profiles</a></li>
+                <li><a asp-controller="Account" asp-action="AccountLogin">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="content">
+        <div id="profile-info">
+            <div id="profile-details">
+                <h2>First Name</h2>
+                <p>Neel</p>
+                <h2>Last Name</h2>
+                <p>Patel</p>
+                <h2>Organization</h2>
+                <p>NSYNC</p>
+                <h2>Email</h2>
+                <p>Neel@JP.com</p>
+            </div>
+
+            <div id="profile-status">
+                <table>
+                    <tr>
+                        <th>Profile ID</th>
+                        <th>Project Status</th>
+                        <th>Created Date:</th>
+                        <th>Review Date</th>
+                    </tr>
+                    <tr>
+                        <td>Neel1234</td>
+                        <td>
+                            <select>
+                                <option value="Pending" selected>Pending</option>
+                                <option value="Under Review">Under Review</option>
+                                <option value="Rejected">Rejected</option>
+                                <option value="Approved">Approved</option>
+                            </select>
+                        </td>
+                        <td>2/10/2024</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+</body>
+</html>

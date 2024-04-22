@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null; // No layout to match the wireframe
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Intake Dashboard</title>
+    <link rel="stylesheet" href="~/css/ProjectIntake.css"> <!-- Ensure the correct path to your CSS file -->
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <ul>
+                <li><a asp-controller="Dashboard" asp-action="Dashboard">Project Intake</a></li>
+                <li><a asp-controller="Dashboard" asp-action="Dashboard">Dashboard</a></li>
+                <li><a asp-controller="ManageProjects" asp-action="ManageProjects">Manage Projects</a></li>
+                <li><a asp-controller="ManageProfiles" asp-action="ManageProfiles">Manage Profiles</a></li>
+                <li><a asp-controller="Account" asp-action="AccountLogin">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="content">
+        <div id="filter">
+            <table>
+                <tr>
+                    <td>Profile Status</td>
+                    <td>Date</td>
+                    <td>Organization</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option value="Pending">Pending</option>
+                            <option value="Under Review">Under Review</option>
+                        </select>
+                    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="project-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Short Desc</th>
+                        <th>Project Status</th>
+                        <th>Comments</th>
+                        <th>View Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Class Registration</td>
+                        <td>Faster way to register for classes</td>
+                        <td>Pending Review</td>
+                        <td>None</td>
+                        <td><button class="button-link">View Project</button></td>
+                    </tr>
+                    <tr>
+                        <td>Food Truck App</td>
+                        <td>Ordering from food trucks on campus through grubhub</td>
+                        <td>Denied</td>
+                        <td>We don't like it. -Someone<br>2 Other comments</td>
+                        <td><button class="button-link">View Project</button></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

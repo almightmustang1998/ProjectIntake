@@ -1,0 +1,79 @@
+﻿@{
+    Layout = null; // This will remove the default layout to match the wireframe provided.
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/ProjectIntake.css">
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <ul>
+                <li><a asp-controller="Dashboard" asp-action="Dashboard">Project Intake</a></li>
+                <li><a asp-controller="Dashboard" asp-action="Dashboard">Dashboard</a></li>
+                <li><a asp-controller="ManageProjects" asp-action="ManageProjects">Manage Projects</a></li>
+                <li><a asp-controller="ManageProfiles" asp-action="ManageProfiles">Manage Profiles</a></li>
+                <li><a asp-controller="Account" asp-action="AccountLogin">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="filter">
+        <table>
+            <tr>
+                <td>Profile Status</td>
+                <td>Organization</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option value="Pending">Pending</option>
+                        <option value="Under Review">Under Review</option>
+                    </select>
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="profile-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Profile ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Organization</th>
+                    <th>Email</th>
+                    <th>Review Status</th>
+                    <th>View Profile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Neel1234</td>
+                    <td>Neel</td>
+                    <td>Patel</td>
+                    <td>Temple University</td>
+                    <td>Neel@JP.com</td>
+                    <td>Pending</td>
+                    <td><a class="button-link" asp-controller="ViewProfile" asp-action="ViewProfile">View Profile</a></td>
+                </tr>
+                <tr>
+                    <td>Nathan1234</td>
+                    <td>Nathan</td>
+                    <td>Marzina</td>
+                    <td>Temple University</td>
+                    <td>nate@Nsync.com</td>
+                    <td>Approved</td>
+                    <td><a class="button-link" asp-controller="ViewProfile" asp-action="ViewProfile">View Profile</a></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
