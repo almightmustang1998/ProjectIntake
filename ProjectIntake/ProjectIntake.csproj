@@ -7,6 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="OnePage\assets\css\temple.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="OnePage\assets\css\temple.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="OnePage\assets\User.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Images\" />
     <Folder Include="Views\Reviewer\Main\" />
     <Folder Include="Views\Reviewer\Profile\" />

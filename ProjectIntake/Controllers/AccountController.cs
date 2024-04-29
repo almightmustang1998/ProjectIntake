@@ -15,5 +15,17 @@ namespace ProjectIntake.Controllers
         {
             return View();
         }
+        public IActionResult ClientLogin()
+        {
+            return View();
+        }
+        public IActionResult AdminLogin()
+        {
+            return View();
+        }
+        public IActionResult ClientCreateAccount()
+        {
+            return View();
+        }
     }
 }
