@@ -18,12 +18,29 @@ a {
   color: #5E1F28;
   text-decoration: none;
 }
+.pending{
+    color: orange;
+    font-weight: bold;
+}
+.approved{
+    color: limegreen;
+    font-weight: bold;
+}
+.rejected{
+    color: red;
+    font-weight: bold;
 
+}
 a:hover {
   color: #469fdf;
   text-decoration: none;
 }
-
+.team img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
+}
 h1,
 h2,
 h3,
