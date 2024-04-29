@@ -7,15 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\OnePage\assets\css\temple.png" />
+    <None Remove="OnePage\assets\css\temple.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Views\OnePage\assets\css\temple.png">
+    <Content Include="OnePage\assets\css\temple.png">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="Views\OnePage\assets\User.jpeg" />
+    <Content Include="OnePage\assets\User.jpeg" />
   </ItemGroup>
 
   <ItemGroup>

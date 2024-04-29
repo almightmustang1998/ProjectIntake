@@ -15,7 +15,7 @@ namespace ProjectIntake.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("~/Views/Account/AdminLogin.cshtml");
         }
 
         public IActionResult Privacy()
