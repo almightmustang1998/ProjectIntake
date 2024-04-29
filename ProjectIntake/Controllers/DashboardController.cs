@@ -8,7 +8,7 @@ namespace ProjectIntake.Controllers
         public IActionResult Dashboard()
         {
 
-            return View("~/Views/Admin/Main/Dashboard.cshtml");
+            return View("~/../Views/Admin/Main/Dashboard.cshtml");
         }
     }
 }
