@@ -53,6 +53,10 @@ h6 {
     border-radius: 50%;
     max-width: 150px;
 }
+.profileimgnav {
+    border-radius: 50%;
+    max-width: 40px;
+}
 .back-to-top i {
   font-size: 28px;
   color: #fff;
